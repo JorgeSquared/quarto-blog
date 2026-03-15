@@ -1,0 +1,6 @@
+_site/
+_freeze/
+.quarto/
+*.html
+!_quarto.yml
+.DS_Store

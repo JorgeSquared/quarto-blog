@@ -1,0 +1,5 @@
+.git
+_site
+_freeze
+.quarto
+*.html

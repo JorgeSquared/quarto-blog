@@ -1,0 +1,86 @@
+---
+title: "A Tour of LaTeX in Quarto"
+author: "Jirka"
+date: "2026-03-14"
+categories: [mathematics, logic, philosophy]
+description: "Testing LaTeX rendering across various mathematical domains."
+---
+
+## Inline and Display Math
+
+Euler's identity $e^{i\pi} + 1 = 0$ is often called the most beautiful equation.
+
+The Gaussian integral:
+
+$$
+\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}
+$$ {#eq-gaussian}
+
+We can reference this as @eq-gaussian.
+
+## Aligned Equations
+
+$$
+\begin{aligned}
+\nabla \cdot \mathbf{E} &= \frac{\rho}{\varepsilon_0} \\
+\nabla \cdot \mathbf{B} &= 0 \\
+\nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t} \\
+\nabla \times \mathbf{B} &= \mu_0 \mathbf{J} + \mu_0 \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}
+\end{aligned}
+$$
+
+## Matrices
+
+$$
+A = \begin{pmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{pmatrix}, \quad
+\det(A) = a_{11}a_{22} - a_{12}a_{21}
+$$
+
+## Logic and Proof
+
+Modus ponens: if $\varphi \rightarrow \psi$ and $\varphi$, then $\psi$.
+
+A sequent in modal logic:
+
+$$
+\frac{\Gamma \vdash \varphi}{\Gamma \vdash \Box \varphi} \quad (\text{Necessitation})
+$$
+
+The Barcan formula:
+
+$$
+\forall x \, \Box \varphi(x) \rightarrow \Box \, \forall x \, \varphi(x)
+$$
+
+## Custom Macros
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Prob}[1]{P\!\left(#1\right)}
+
+The reals $\R$ are uncountable, while the naturals $\N$ are not.
+
+Bayes' theorem:
+
+$$
+\Prob{A \mid B} = \frac{\Prob{B \mid A}\,\Prob{A}}{\Prob{B}}
+$$ {#eq-bayes}
+
+## Category Theory
+
+A commutative diagram expressed algebraically: given morphisms
+$f: A \to B$, $g: B \to C$, and $h: A \to C$, the diagram commutes
+iff $g \circ f = h$.
+
+$$
+\text{Hom}(F(A), B) \cong \text{Hom}(A, G(B))
+$$
+
+## Philosophy: Formal Ethics
+
+A deontic logic formula — "if it is obligatory that $\varphi$,
+then it is permissible that $\varphi$":
+
+$$
+\mathcal{O}\varphi \rightarrow \mathcal{P}\varphi
+$$

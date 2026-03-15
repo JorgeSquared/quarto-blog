@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "My Math & Philosophy Blog"
+  description: "Explorations in mathematics, logic, and philosophy"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/YOUR_USERNAME/YOUR_REPO
+      - icon: rss
+        href: index.xml
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    code-fold: true
+    html-math-method: mathjax
+
+crossref:
+  eq-prefix: Eq.
