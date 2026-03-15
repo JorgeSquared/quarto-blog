@@ -4,6 +4,7 @@ author: "Jirka"
 date: "2026-03-14"
 categories: [mathematics, logic, philosophy]
 description: "Testing LaTeX rendering across various mathematical domains."
+draft: true
 ---
 
 ## Inline and Display Math
