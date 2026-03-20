@@ -4,3 +4,5 @@ _freeze/
 *.html
 !_quarto.yml
 .DS_Store
+
+/.quarto/

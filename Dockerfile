@@ -20,4 +20,4 @@ WORKDIR /project
 EXPOSE 4200
 
 ENTRYPOINT ["quarto"]
-CMD ["preview", "--host", "0.0.0.0", "--port", "4200"]
+CMD ["preview", "--host", "0.0.0.0", "--port", "4200", "--no-browser", "--no-watch-inputs"]

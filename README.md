@@ -19,7 +19,7 @@ docker build -t quarto-blog .
 Run the live-preview server:
 
 ```bash
-docker run -p 4200:4200 -v "$(pwd):/project" quarto-blog
+docker run --rm -p 4200:4200 -v "$(pwd):/project" quarto-blog
 ```
 
 Open [http://localhost:4200](http://localhost:4200). The preview auto-reloads on file changes thanks to the bind mount.
@@ -46,7 +46,7 @@ During local preview, drafts are **always visible** so you can work on them norm
 To produce the final `_site/` output without starting a server:
 
 ```bash
-docker run -v "$(pwd):/project" quarto-blog render
+docker run --rm -v "$(pwd):/project" quarto-blog render
 ```
 
 ## Deployment
